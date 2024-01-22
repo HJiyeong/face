@@ -1,14 +1,15 @@
-#train data
-  랜드마크 추출 결과 -> landmarks/landmark_datas
+train data
 
-#test data
-  few-shot 모델에서 테스트용. 6개 클래스의 각각 한개씩 샘플
+랜드마크 추출 결과 -> landmarks/landmark_datas
 
-#data_preprocessing.py
-  랜드마크 추출 코드
+test data
+few-shot 모델에서 테스트용. 6개 클래스의 각각 한개씩 샘플
 
-#1_model_training.py
-  그냥 모델
+data_preprocessing.py
+랜드마크 추출 코드
 
-#2_model_training.py
-  few shot model
+1_model_training.py
+그냥 모델
+
+2_model_training.py
+few shot model
