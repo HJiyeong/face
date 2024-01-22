@@ -21,29 +21,6 @@ data = sorted(data, key=lambda x: x.get('label', '').casefold())
 print(data)
 
 
-import json
-import re
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader
-from sklearn.model_selection import train_test_split
-
-
-
-
-# JSON 파일 경로
-json_file_path = "/Users/hwangjiyeong/PycharmProjects/facial reconition/face_recognition_1/landmark/landmark_datas"
-
-# JSON 파일 읽기
-with open(json_file_path, 'r') as json_file:
-    # JSON 파일을 파이썬 딕셔너리로 변환
-    data = json.load(json_file)
-
-data = sorted(data, key=lambda x: x.get('label', '').casefold())
-print(data)
-
-
 
 class LandmarkModel(nn.Module):
     def __init__(self, input_dim, output_dim):
